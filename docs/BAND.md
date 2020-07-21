@@ -1,6 +1,6 @@
-# ATOM
+# BAND
 
-Irisnet-crypto has completed the docking cosmos main network(chain-id:cosmoshub-2),supports signing for the following transactions
+Irisnet-crypto has completed the docking cosmos main network(chain-id:band-wenchang-testnet),supports signing for the following transactions
 
 - Transfer
 - Delegate
@@ -18,7 +18,7 @@ Construct a valid transaction that requires user to construct the following tran
   "from": "",
   "account_number": 0,
   "sequence": 0,
-  "fees": { "denom": "uatom", "amount": 100 },
+  "fees": { "denom": "uband", "amount": 100 },
   "gas": 10000,
   "memo": "",
   "type": "",
@@ -49,10 +49,10 @@ The parameters are as follows:
 
     ```json
     {
-      "to": "cosmos1njqswmydmrursv6qg4nl5za7q6lkdsqdvat5wq",
+      "to": "band18d26ynxg4pcwezrq44jl552ugxla523zv93paj",
       "coins": [
         {
-          "denom": "uatom",
+          "denom": "uband",
           "amount": 1000
         }
       ]
@@ -63,9 +63,9 @@ The parameters are as follows:
 
     ```json
     {
-      "validator_addr": "cosmosvaloper1r33tlrh7cawtzxmct7zatau6vdydp0rg3ywegm",
+      "validator_addr": "bandvaloper1r00x80djyu6wkxpceegmvn5w9nx65prgqhxkzq",
       "amount": {
-        "denom": "stake",
+        "denom": "uband",
         "amount": "10"
       }
     }
@@ -75,9 +75,9 @@ The parameters are as follows:
 
     ```json
     {
-      "validator_addr": "cosmosvaloper1r33tlrh7cawtzxmct7zatau6vdydp0rg3ywegm",
+      "validator_addr": "bandvaloper1r00x80djyu6wkxpceegmvn5w9nx65prgqhxkzq",
       "amount": {
-        "denom": "stake",
+        "denom": "uband",
         "amount": "10"
       }
     }
@@ -87,10 +87,10 @@ The parameters are as follows:
 
     ```json
     {
-      "validator_src_addr": "cosmosvaloper1r33tlrh7cawtzxmct7zatau6vdydp0rg3ywegm",
-      "validator_dst_addr": "cosmosvaloper12qf750gjjlxpslxefnnql3egu350c6qn5rmswu",
+      "validator_src_addr": "bandvaloper1r00x80djyu6wkxpceegmvn5w9nx65prgqhxkzq",
+      "validator_dst_addr": "bandvaloper1r00x80djyu6wkxpceegmvn5w9nx65prgqhxkzq",
       "amount": {
-        "denom": "stake",
+        "denom": "uband",
         "amount": "2"
       }
     }
@@ -100,14 +100,14 @@ The parameters are as follows:
 
     ```json
     {
-      "withdraw_addr": "cosmos192xdyxer5hvtrrredragyup2gejv73ztzpa7j3"
+      "withdraw_addr": "bandvaloper1r00x80djyu6wkxpceegmvn5w9nx65prgqhxkzq"
     }
     ```
 
   - withdraw_delegation_reward
     ```json
     {
-      "validator_addr": "cosmosvaloper1r33tlrh7cawtzxmct7zatau6vdydp0rg3ywegm"
+      "validator_addr": "bandvaloper1r00x80djyu6wkxpceegmvn5w9nx65prgqhxkzq"
     }
     ```
   - withdraw_validator_commission(don't need)
@@ -121,10 +121,10 @@ When you have constructed the request parameters, you can call crypto's signatur
 2. Get transaction builder
 
    ```js
-   let builder = Irisnet.getBuilder("cosmos");
+   let builder = Irisnet.getBuilder("band");
    ```
 
-   _getBuilder_ has one parameter,used to specify which blockchain transaction to construct,we choose 'cosmos'
+   _getBuilder_ has one parameter,used to specify which blockchain transaction to construct,we choose 'band'
 
 3. Construct and sign a transaction
 
