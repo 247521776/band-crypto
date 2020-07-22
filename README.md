@@ -1,10 +1,10 @@
-# irisnet-crypto
+# band-crypto
 
 JavaScript library for IRIS Hub, Cosmos Hub, and BandChain.
 It mainly provides account generation, transaction construction and offline signing functions of [irisnet](./docs/IRIS.md), [cosmos](./docs/ATOM.md), and [band](./docs/BAND.md) You can install this library in the following ways
 
 ```bash
-npm install git+https://github.com/irisnet/irisnet-crypto.git
+npm install git+https://github.com/bandprotocol/band-crypto.git
 ```
 
 ## Examples
@@ -12,7 +12,7 @@ npm install git+https://github.com/irisnet/irisnet-crypto.git
 ### import package
 
 ```js
-import Irisnet from "irisnet-crypto";
+import Band from "band-crypto";
 ```
 
 ### Account
@@ -20,7 +20,7 @@ import Irisnet from "irisnet-crypto";
 The first step, you need to explain whether the generated wallet is iris, cosmos, or band
 
 ```js
-let crypto = Irisnet.getCrypto("iris");
+let crypto = Band.getCrypto("band");
 ```
 
 ##### generate account
@@ -60,7 +60,7 @@ The difference between the above two is that the latter does not return the mnem
 Construct a transaction and sign
 
 ```js
-let builder = Irisnet.getBuilder("band");
+let builder = Band.getBuilder("band");
 let stdTx = builder.buildAndSignTx("your request", "your privateKey");
 let postTx = stdTx.GetData();
 let hash = stdTx.Hash();
