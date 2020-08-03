@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/irisnet/band-crypto.git"
+    "url": "git+https://github.com/bandprotocol/band-crypto.git"
   },
   "keywords": [
     "cosmos",
@@ -20,9 +20,9 @@
   "author": "Wenxi Cheng <vincent@bianjie.ai>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/irisnet/band-crypto/issues"
+    "url": "https://github.com/bandprotocol/band-crypto/issues"
   },
-  "homepage": "https://github.com/irisnet/band-crypto#readme",
+  "homepage": "https://github.com/bandprotocol/band-crypto#readme",
   "dependencies": {
     "base64-node": "^1.0.0",
     "bech32": "^1.1.3",
