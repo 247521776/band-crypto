@@ -1,6 +1,6 @@
 # IRIS
 
-Irisnet-crypto has completed the docking irisnet main network(chain-id:irishub)， supports signing for the following transactions
+band-crypto has completed the docking irisnet main network(chain-id:irishub)， supports signing for the following transactions
 
 - Transfer
 - Delegate
@@ -98,7 +98,7 @@ The parameters are as follows:
 
 1. Import the crypto library
    ```js
-   import Irisnet from "irisnet-crypto";
+   import Irisnet from "band-crypto";
    ```
 2. Get transaction builder
 

@@ -1,6 +1,6 @@
 # ATOM
 
-Irisnet-crypto has completed the docking cosmos main network(chain-id:cosmoshub-2),supports signing for the following transactions
+band-crypto has completed the docking cosmos main network(chain-id:cosmoshub-2),supports signing for the following transactions
 
 - Transfer
 - Delegate
@@ -116,7 +116,7 @@ When you have constructed the request parameters, you can call crypto's signatur
 
 1. Import the crypto library
    ```js
-   import Irisnet from "irisnet-crypto";
+   import Irisnet from "band-crypto";
    ```
 2. Get transaction builder
 

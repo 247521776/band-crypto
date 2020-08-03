@@ -1,6 +1,6 @@
 ## 1.0.3
 
-*July 19, 2018*
+_July 19, 2018_
 
 IMPROVEMENTS
 
@@ -8,5 +8,4 @@ IMPROVEMENTS
 - [test] Add unit test package
 - [util] Add accessory kit
 - `crypto.js` is the entry for the relevant account operations of the chain, and the builder is the entry for constructing and signing transactions.
-- `constants.js` provides `irisnet-crypto` related constants
-
+- `constants.js` provides `band-crypto` related constants
